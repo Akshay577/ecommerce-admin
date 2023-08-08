@@ -1,11 +1,13 @@
-import { Button } from '@/components/ui/button'
-import { UserButton } from '@clerk/nextjs'
-import Image from 'next/image'
+
+import { Modal } from "@/components/ui/modal";
+import { UserButton } from "@clerk/nextjs";
 
 export default function SetUpPage() {
   return (
 <div className='p-4'>
-    <UserButton afterSignOutUrl="/"/>
+    <Modal title="Test" description="test" isOpen={true} onClose={() => {}}>Children</Modal>
+    {/* <UserButton afterSignOutUrl="/"/> */}
+
 </div>
     )
 }
