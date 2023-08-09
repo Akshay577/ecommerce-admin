@@ -40,3 +40,4 @@ export const Modal: React.FC<ModalProps> = ({
     </Dialog>
   );
 };
+
